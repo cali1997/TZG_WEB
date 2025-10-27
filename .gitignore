@@ -21,3 +21,20 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# VS Code cache and temporary files
+~/.vscode-root/
+.vscode-root/
+
+# Cloudflare files
+cloudflared.deb
+cloudflared
+
+# Security and backup files
+*.key
+*.pem
+*.enc
+backup_*.tar.gz
+
+# Project specific temporary files
+src/my-typescript-project/

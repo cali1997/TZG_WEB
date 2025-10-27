@@ -1,24 +1,26 @@
-# 🌐 ICT TZG Website
+# 🌐 ICT TZG Professional Website
 
 [![GitHub Stars](https://img.shields.io/github/stars/cali1997/TZG_WEB?style=social)](https://github.com/cali1997/TZG_WEB)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/docker-ready-blue)](https://docker.com)
 [![React](https://img.shields.io/badge/react-18.x-blue)](https://reactjs.org)
 
-Een moderne, professionele freelance ICT-services website met Matrix-stijl design, gebouwd met React, TypeScript en Tailwind CSS. De website biedt een volledig admin dashboard voor prijsbeheer en is volledig gecontaineriseerd met Docker.
+Een moderne, professionele freelance ICT-services website met elegant glasmorphism design, gebouwd met React, TypeScript en Tailwind CSS. De website biedt een volledig admin dashboard voor prijsbeheer en is volledig gecontaineriseerd met Docker.
 
 ## 📸 Preview
 
-![ICT TZG Website](https://via.placeholder.com/800x400/000000/00FF00?text=ICT+TZG+Website+Matrix+Style)
+![ICT TZG Professional Website](https://via.placeholder.com/800x400/1e293b/3b82f6?text=ICT+TZG+Professional+Website)
 
 ## ✨ Features
 
-- 🎨 **Matrix-stijl animatie achtergrond** - Futuristische visuele ervaring
-- 📱 **Volledig responsive design** - Werkt perfect op alle apparaten
+- 🎨 **Professional glasmorphism design** - Moderne, zakelijke visuele ervaring
+- 📱 **Volledig responsive design** - Werkt perfect op alle apparaten  
 - 🔐 **Admin dashboard** - Eenvoudig prijzen en instellingen beheren
 - 🚀 **Snelle performance** - Gebouwd met Vite voor optimale snelheid
 - 🐳 **Docker ready** - Eenvoudig deployment en development
 - 💼 **Professionele diensten showcase** - ICT, netwerk, reparaties en meer
+- ✨ **Subtle animations** - Elegante fade-in en hover effecten
+- 🎯 **Professional color scheme** - Zakelijke blauw/grijs kleurenpalet
 
 ## 🚀 Snel Starten
 

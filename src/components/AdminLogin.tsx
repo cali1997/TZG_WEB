@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Lock } from 'lucide-react';
 import { adminLogin, setAdminLoggedIn } from '../lib/auth';
+import { ProfessionalBackground } from './ProfessionalBackground';
 
 interface AdminLoginProps {
   onLoginSuccess: () => void;
@@ -24,25 +25,26 @@ export function AdminLogin({ onLoginSuccess }: AdminLoginProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center px-6">
-      <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
+    <div className="min-h-screen flex items-center justify-center px-6 relative">
+      <ProfessionalBackground />
+      <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-8 w-full max-w-md border border-white/20 relative z-10">
         <div className="flex items-center justify-center mb-8">
-          <Lock className="w-12 h-12 text-emerald-500" />
+          <Lock className="w-12 h-12 text-blue-400" />
         </div>
 
-        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">
+        <h2 className="text-3xl font-bold text-white text-center mb-8">
           Admin Login
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {error && (
-            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+            <div className="bg-red-500/20 border border-red-400/50 text-red-200 px-4 py-3 rounded-lg backdrop-blur-sm">
               {error}
             </div>
           )}
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+            <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
               Login Email
             </label>
             <input
@@ -51,12 +53,12 @@ export function AdminLogin({ onLoginSuccess }: AdminLoginProps) {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-colors"
+              className="w-full px-4 py-3 border border-white/20 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white/10 backdrop-blur-sm text-white placeholder-gray-300"
             />
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-slate-700 mb-2">
+            <label htmlFor="password" className="block text-sm font-medium text-white mb-2">
               Wachtwoord
             </label>
             <input
@@ -65,14 +67,14 @@ export function AdminLogin({ onLoginSuccess }: AdminLoginProps) {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-colors"
+              className="w-full px-4 py-3 border border-white/20 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white/10 backdrop-blur-sm text-white placeholder-gray-300"
               placeholder="••••••••"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors duration-200 shadow-lg"
           >
             Inloggen
           </button>

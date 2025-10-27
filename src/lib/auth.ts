@@ -1,5 +1,5 @@
-const ADMIN_EMAIL = 'admin@icttzg.nl';
-const ADMIN_PASSWORD = 'admin123';
+const ADMIN_EMAIL = 'ict.tzg@gmail.com';
+const ADMIN_PASSWORD = 'Tiger@1297';
 
 export const adminLogin = (email: string, password: string): boolean => {
   return email === ADMIN_EMAIL && password === ADMIN_PASSWORD;
