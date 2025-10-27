@@ -1,0 +1,20 @@
+# Development Dockerfile voor hot reload
+FROM node:18-alpine
+
+# Stel werkdirectory in
+WORKDIR /app
+
+# Kopieer package files
+COPY package*.json ./
+
+# Installeer alle dependencies (inclusief dev dependencies)
+RUN npm ci
+
+# Kopieer source code
+COPY . .
+
+# Expose development poort
+EXPOSE 5173
+
+# Start development server
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
